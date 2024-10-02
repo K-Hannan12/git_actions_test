@@ -1,0 +1,16 @@
+name: Show Files
+
+on:
+  push:
+
+jobs:
+    get_file:
+      runs-on: ubuntu-latest
+      steps:
+      - name: checkout repo
+        run: actions/checkout@v4
+
+      - name: get files
+        run: ls -a
+        
+    
